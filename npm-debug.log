@@ -1,0 +1,103 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.38
+4 verbose node symlink /usr/bin/node
+5 warn package.json ntalk@0.0.1 No repository field.
+6 warn package.json ntalk@0.0.1 No README data
+7 verbose readDependencies using package.json deps
+8 verbose install where, deps [ '/home/matheus/ntalk',
+8 verbose install   [ 'express', 'express-load', 'ejs', 'socket.io', 'mongoose' ] ]
+9 info preinstall ntalk@0.0.1
+10 verbose readDependencies using package.json deps
+11 verbose already installed skipping express@3.4.7 /home/matheus/ntalk
+12 verbose already installed skipping express-load@1.1.8 /home/matheus/ntalk
+13 verbose already installed skipping ejs@0.8.5 /home/matheus/ntalk
+14 verbose already installed skipping socket.io@0.9.14 /home/matheus/ntalk
+15 verbose cache add [ 'mongoose@3.6.14', null ]
+16 verbose cache add name=undefined spec="mongoose@3.6.14" args=["mongoose@3.6.14",null]
+17 verbose parsed url { protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: null,
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: 'mongoose@3.6.14',
+17 verbose parsed url   path: 'mongoose@3.6.14',
+17 verbose parsed url   href: 'mongoose@3.6.14' }
+18 verbose cache add name="mongoose" spec="3.6.14" args=["mongoose","3.6.14"]
+19 verbose parsed url { protocol: null,
+19 verbose parsed url   slashes: null,
+19 verbose parsed url   auth: null,
+19 verbose parsed url   host: null,
+19 verbose parsed url   port: null,
+19 verbose parsed url   hostname: null,
+19 verbose parsed url   hash: null,
+19 verbose parsed url   search: null,
+19 verbose parsed url   query: null,
+19 verbose parsed url   pathname: '3.6.14',
+19 verbose parsed url   path: '3.6.14',
+19 verbose parsed url   href: '3.6.14' }
+20 verbose addNamed [ 'mongoose', '3.6.14' ]
+21 verbose addNamed [ '3.6.14', '3.6.14' ]
+22 silly lockFile 56637aad-mongoose-3-6-14 mongoose@3.6.14
+23 verbose lock mongoose@3.6.14 /home/matheus/.npm/56637aad-mongoose-3-6-14.lock
+24 verbose request where is /mongoose
+25 verbose request registry https://registry.npmjs.org/
+26 verbose request id 1dfb370000d9759e
+27 verbose url raw /mongoose
+28 verbose url resolving [ 'https://registry.npmjs.org/', './mongoose' ]
+29 verbose url resolved https://registry.npmjs.org/mongoose
+30 verbose request where is https://registry.npmjs.org/mongoose
+31 info trying registry request attempt 1 at 22:03:03
+32 verbose etag "18QY7GZOKE146YCLDPIYJLRN3"
+33 http GET https://registry.npmjs.org/mongoose
+34 http 200 https://registry.npmjs.org/mongoose
+35 silly registry.get cb [ 200,
+35 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+35 silly registry.get     etag: '"7B9YFA1D2Y8HQ6FSAZV115ACK"',
+35 silly registry.get     'content-type': 'application/json',
+35 silly registry.get     'cache-control': 'max-age=60',
+35 silly registry.get     'content-length': '331109',
+35 silly registry.get     'accept-ranges': 'bytes',
+35 silly registry.get     date: 'Thu, 09 Jul 2015 01:03:04 GMT',
+35 silly registry.get     via: '1.1 varnish',
+35 silly registry.get     age: '22',
+35 silly registry.get     connection: 'keep-alive',
+35 silly registry.get     'x-served-by': 'cache-iad2146-IAD',
+35 silly registry.get     'x-cache': 'HIT',
+35 silly registry.get     'x-cache-hits': '2',
+35 silly registry.get     'x-timer': 'S1436403784.448646,VS0,VE0',
+35 silly registry.get     vary: 'Accept' } ]
+36 silly lockFile d1f17e77-org-mongoose-mongoose-3-6-14-tgz https://registry.npmjs.org/mongoose/-/mongoose-3.6.14.tgz
+37 verbose lock https://registry.npmjs.org/mongoose/-/mongoose-3.6.14.tgz /home/matheus/.npm/d1f17e77-org-mongoose-mongoose-3-6-14-tgz.lock
+38 verbose addRemoteTarball [ 'https://registry.npmjs.org/mongoose/-/mongoose-3.6.14.tgz',
+38 verbose addRemoteTarball   'acf28354ba4f792ded931ccd0dfe038a65757832' ]
+39 info retry fetch attempt 1 at 22:03:07
+40 verbose fetch to= /tmp/npm-11409-1iUVFK7p/registry.npmjs.org/mongoose/-/mongoose-3.6.14.tgz
+41 http GET https://registry.npmjs.org/mongoose/-/mongoose-3.6.14.tgz
+42 http 200 https://registry.npmjs.org/mongoose/-/mongoose-3.6.14.tgz
+43 silly lockFile d1f17e77-org-mongoose-mongoose-3-6-14-tgz https://registry.npmjs.org/mongoose/-/mongoose-3.6.14.tgz
+44 silly lockFile d1f17e77-org-mongoose-mongoose-3-6-14-tgz https://registry.npmjs.org/mongoose/-/mongoose-3.6.14.tgz
+45 silly lockFile 56637aad-mongoose-3-6-14 mongoose@3.6.14
+46 silly lockFile 56637aad-mongoose-3-6-14 mongoose@3.6.14
+47 error Error: EACCES, mkdir '/home/matheus/.npm/mongoose/3.6.14'
+47 error  { [Error: EACCES, mkdir '/home/matheus/.npm/mongoose/3.6.14']
+47 error   errno: 3,
+47 error   code: 'EACCES',
+47 error   path: '/home/matheus/.npm/mongoose/3.6.14',
+47 error   parent: 'ntalk' }
+48 error Please try running this command again as root/Administrator.
+49 error System Linux 3.2.0-51-generic
+50 error command "/usr/bin/node" "/usr/bin/npm" "install"
+51 error cwd /home/matheus/ntalk
+52 error node -v v0.10.38
+53 error npm -v 1.4.28
+54 error path /home/matheus/.npm/mongoose/3.6.14
+55 error code EACCES
+56 error errno 3
+57 error stack Error: EACCES, mkdir '/home/matheus/.npm/mongoose/3.6.14'
+58 verbose exit [ 3, true ]
